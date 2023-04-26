@@ -12,8 +12,10 @@ public class playerController : MonoBehaviour
 
     [HideInInspector] public float horizontalInput;
     [HideInInspector] public float verticalInput;
-    [HideInInspector] public bool canRotate = false; 
-    [HideInInspector] public bool canMove = true;
+
+    [Header("Cans")]
+    public bool canRotate = false; 
+    public bool canMove = true;
 
     Rigidbody2D rb;
     
