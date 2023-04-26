@@ -18,6 +18,7 @@ public class playerController : MonoBehaviour
     public bool canMove = true;
 
     Rigidbody2D rb;
+    Animator anim;
     
 
 
@@ -28,6 +29,7 @@ public class playerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
 
         if(!canMove){
             Debug.Log("Can move is false");
@@ -48,6 +50,8 @@ public class playerController : MonoBehaviour
         if(canRotate){
             RotatePlayer(Camera.main.ScreenToWorldPoint(Input.mousePosition));
         }
+
+        animationCheck();
     }
 
     public void Movement(float playerMoveSpeed, float horizontalInput, float verticalInput){
@@ -64,5 +68,17 @@ public class playerController : MonoBehaviour
         
         float angle = Mathf.Atan2(mousePosition.y - transform.position.y, mousePosition.x - transform.position.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+    }
+
+    public void animationCheck(){
+        if(horizontalInput != 0 || verticalInput != 0){
+            anim.SetBool("isRunning", true);
+            anim.SetBool("isIdle", false);
+            
+        }
+        if(horizontalInput == 0 && verticalInput == 0){
+            anim.SetBool("isRunning", false);
+            anim.SetBool("isIdle", true);
+        }
     }
 }
