@@ -12,7 +12,7 @@ public class getItem : MonoBehaviour
     int value;
     public int itemMultiplier = 1;
     bool collidingWithItem;
-    string itemName;
+    public string itemName;
     GameObject otherItem;
 
     inventoryController invControl;
@@ -68,7 +68,7 @@ public class getItem : MonoBehaviour
                 foreach(KeyValuePair<string, int> i in invControl.inventory){
                     Debug.Log($"Key : {i.Key}, Value : {i.Value}");
                 }
-                
+
                 ItemDestruction(otherItem);
             }
 
