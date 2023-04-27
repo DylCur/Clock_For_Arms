@@ -77,40 +77,40 @@ public class inventoryGui : MonoBehaviour
     public void InventoryUpdate(){
 
 
+            // Item name is the name of the item you have gotten
 
         for(int i = 0; i < inventorySlotsBG.Length; i++)
         {
             if(gItem.itemName != null){
                 if(gItem.itemName == "Wood"){
+                    if(!itemInInventory[0]){
+                        woodSlot = i;
+                    }
                     itemInInventory[0] = true; 
-                    woodSlot = i;
+                    
                 }
             }
             
            
-
+           if(itemInInventory[0]){
+                Color invisible = new Color(255, 255, 255, 255);
+                quantityText[woodSlot].text = invControl.inventory["Wood"].ToString();
+                invSlotItemRenderers[woodSlot].sprite = woodSprite;
+                invSlotItemRenderers[woodSlot].color = invisible;
+                
+           }
 
 
         }
 
 
-        if(gItem.itemName == "Wood"){ // If youre getting wood
-            if(itemInInventory[0] == false){ // If its in the inventory
-                Color fullOpacity = new Color(255, 255, 255, 255);
-                invSlotItemRenderers[0].sprite = woodSprite;
-                invSlotItemRenderers[0].color = fullOpacity;
-                woodSlot = 0;
-            }
-
-            else{
-                quantityText[woodSlot].text = (invControl.inventory["Wood"]).ToString();
-            }
+        
                         
-        }
+        
         for(int i = 0; i < inventorySlotsBG.Length; i++){
             key = invControl.inventory.FirstOrDefault(x => x.Value == i).Key;
             
-            if(key != null){// If finds a key set the quantity equal to the dictionarys quantity
+            if(key != null && itemQuantity != 0){// If finds a key set the quantity equal to the dictionarys quantity
                 itemQuantity = invControl.inventory[key];
                 
                 // if(quantityText[i] != null){
