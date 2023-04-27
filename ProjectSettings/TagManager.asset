@@ -7,6 +7,8 @@ TagManager:
   - Wood
   - Hotbar
   - InvExclusive
+  - Clock
+  - Sword
   layers:
   - Default
   - TransparentFX

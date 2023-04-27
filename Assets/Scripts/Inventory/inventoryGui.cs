@@ -15,6 +15,8 @@ public class inventoryGui : MonoBehaviour
     public bool[] itemInInventory = {false};
 
     public Sprite woodSprite;
+    public Sprite clockSprite;
+    public Sprite swordSprite;
     
 
     // Total 9 (27 / 3)
@@ -34,6 +36,8 @@ public class inventoryGui : MonoBehaviour
 
     public KeyCode inventoryKey = KeyCode.Tab;
     int woodSlot;
+    int clockSlot;
+    int swordSlot;
 
 
     
@@ -89,6 +93,53 @@ public class inventoryGui : MonoBehaviour
                     itemInInventory[0] = true; 
                     
                 }
+                
+                else if(gItem.itemName == "Clock"){
+                    Debug.Log("Item is clock");
+                    if(!itemInInventory[1]){
+                        Debug.Log("Clock not in inv");
+
+                        if(i != woodSlot && i != swordSlot){
+                            clockSlot = i;
+                            Debug.Log("Clock Slot");
+                        }
+
+                        else{
+                            clockSlot = woodSlot + 1;
+                        }
+
+                        gItem.itemName = "";
+                    }
+
+                    itemInInventory[1] = true; 
+                    
+                }
+
+                else if(gItem.itemName == "Sword"){
+                    Debug.Log("Item is Sword");
+                    if(!itemInInventory[2]){
+                        Debug.Log("Sword not in inv");
+
+                        if(i != woodSlot && i != clockSlot){
+                            swordSlot = i;
+                            Debug.Log("Clock Slot");
+                        }
+
+                        else{
+                            for(int j = 0; j < inventorySlotsBG.Length; j++){
+                                if(j!= woodSlot && j!= clockSlot){
+                                    swordSlot = j;
+                                    break;
+                                }
+                            }
+                        }
+
+                        gItem.itemName = "";
+                    }
+
+                    itemInInventory[1] = true; 
+                    
+                }
             }
             
            
@@ -97,6 +148,14 @@ public class inventoryGui : MonoBehaviour
                 quantityText[woodSlot].text = invControl.inventory["Wood"].ToString();
                 invSlotItemRenderers[woodSlot].sprite = woodSprite;
                 invSlotItemRenderers[woodSlot].color = invisible;
+                
+           }
+
+           if(itemInInventory[1]){
+                Color invisible = new Color(255, 255, 255, 255);
+                quantityText[clockSlot].text = invControl.inventory["Clock"].ToString();
+                invSlotItemRenderers[clockSlot].sprite = clockSprite;
+                invSlotItemRenderers[clockSlot].color = invisible;
                 
            }
 
@@ -110,7 +169,7 @@ public class inventoryGui : MonoBehaviour
         for(int i = 0; i < inventorySlotsBG.Length; i++){
             key = invControl.inventory.FirstOrDefault(x => x.Value == i).Key;
             
-            if(key != null && itemQuantity != 0){// If finds a key set the quantity equal to the dictionarys quantity
+            if(key != null && invControl.inventory[key] != 0){// If finds a key set the quantity equal to the dictionarys quantity
                 itemQuantity = invControl.inventory[key];
                 
                 // if(quantityText[i] != null){

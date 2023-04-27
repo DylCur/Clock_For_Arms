@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class inventoryController : MonoBehaviour
 {
-
+    
     // Name : Quantity
     public Dictionary<string, int> inventory = new Dictionary<string, int>()
     {
-        {"Wood", 0}
+        {"Wood", 0},
+        {"Clock", 0},
+        {"Sword", 0}
     };
     
 
