@@ -1,2 +1,4 @@
-# Clock_For_Arms
+# Clock_For_Arms ⌚💪
+
+Horo was just a regular teenager. He had caring friends, a loving family and great school grades; there was one problem however. He was always late. Horo was late so much that his fellow peers started bullying him calling him names such as last minute larry or horo-late. Eventually, his peers got more violent and began using clocks as weapons against him. Whenever Horo walked towards the gates of school, he was pelted with hundreds of clocks from everone around, even the teachers, who hated Horos poor punctuality. After several years of this constany bullying and torture, Horo began to notice some supernatural changes in his arms; despite this, Horo got no help and was silent about it for 12 years. Then on his 24th birthday, he reflected on the impact of being abused by hundreds of people with clocks on his health; after thinking about the truly horrific results, he sought vengance. He wanted to go on a bloodthirsty killing spree on all of those who abused him as a child. With his new time control abilities he begins the search for those who traeded him with injustice...
  
