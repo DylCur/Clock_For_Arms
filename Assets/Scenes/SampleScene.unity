@@ -437,13 +437,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164041880}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.778261, y: 0.6239529, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 959938697}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &189538140
 GameObject:
@@ -1783,9 +1783,7 @@ GameObject:
   - component: {fileID: 536776749}
   - component: {fileID: 536776748}
   - component: {fileID: 536776747}
-  - component: {fileID: 536776752}
   - component: {fileID: 536776751}
-  - component: {fileID: 536776753}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1954,192 +1952,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 536776742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9940066e1472e8f4587888bde86036ad, type: 3}
+  m_Script: {fileID: 11500000, guid: dec229e11cb8d184abdb3a8b17a36d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   possibleItemTags:
   - Wood
-  - Apple
-  - Sword
+  - Stone
   - Clock
-  getKey: 101
+  getKey: 102
   itemMultiplier: 1
-  itemName: 
---- !u!114 &536776752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 536776742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2a2b197cc6d7794bb2f403f28fd0509, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &536776753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 536776742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8713ee0f46ca544fa65163051b3654b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventorySlotsBG:
-  - {fileID: 1630737927}
-  - {fileID: 430521580}
-  - {fileID: 436575627}
-  - {fileID: 832492898}
-  - {fileID: 1524555572}
-  - {fileID: 904010486}
-  - {fileID: 1249453421}
-  - {fileID: 1988453748}
-  - {fileID: 1019709511}
-  - {fileID: 1027705530}
-  - {fileID: 1995956822}
-  - {fileID: 1166196379}
-  - {fileID: 215067335}
-  - {fileID: 1776571177}
-  - {fileID: 404056687}
-  - {fileID: 1260410713}
-  - {fileID: 2037613670}
-  - {fileID: 1331157742}
-  - {fileID: 1702281744}
-  - {fileID: 1342983612}
-  - {fileID: 1769729335}
-  - {fileID: 632420191}
-  - {fileID: 1985508071}
-  - {fileID: 1066453975}
-  - {fileID: 1833187414}
-  - {fileID: 1983160770}
-  - {fileID: 1061083133}
-  inventorySlotsItem:
-  - {fileID: 1863224494}
-  - {fileID: 1246786170}
-  - {fileID: 964587989}
-  - {fileID: 1188796799}
-  - {fileID: 2107317266}
-  - {fileID: 1876136409}
-  - {fileID: 483160795}
-  - {fileID: 733092159}
-  - {fileID: 2060260091}
-  - {fileID: 374121479}
-  - {fileID: 397680549}
-  - {fileID: 691999287}
-  - {fileID: 1562786156}
-  - {fileID: 1862135940}
-  - {fileID: 1977187720}
-  - {fileID: 1921047986}
-  - {fileID: 1950938139}
-  - {fileID: 1679811595}
-  - {fileID: 1448747162}
-  - {fileID: 62955977}
-  - {fileID: 2023557976}
-  - {fileID: 1945645555}
-  - {fileID: 309913317}
-  - {fileID: 259951361}
-  - {fileID: 2050898462}
-  - {fileID: 1468456173}
-  - {fileID: 967084012}
-  invSlotItemRenderers:
-  - {fileID: 1863224496}
-  - {fileID: 1246786172}
-  - {fileID: 964587991}
-  - {fileID: 1188796801}
-  - {fileID: 2107317268}
-  - {fileID: 1876136411}
-  - {fileID: 483160797}
-  - {fileID: 733092161}
-  - {fileID: 2060260093}
-  - {fileID: 374121481}
-  - {fileID: 397680551}
-  - {fileID: 691999289}
-  - {fileID: 1562786158}
-  - {fileID: 1862135942}
-  - {fileID: 1977187722}
-  - {fileID: 1921047988}
-  - {fileID: 1950938141}
-  - {fileID: 1679811597}
-  - {fileID: 1448747164}
-  - {fileID: 62955979}
-  - {fileID: 2023557978}
-  - {fileID: 1945645557}
-  - {fileID: 309913319}
-  - {fileID: 259951363}
-  - {fileID: 2050898464}
-  - {fileID: 1468456175}
-  - {fileID: 967084014}
-  quantityText:
-  - {fileID: 763095570}
-  - {fileID: 1770344843}
-  - {fileID: 790195676}
-  - {fileID: 1153711331}
-  - {fileID: 496710711}
-  - {fileID: 1098967877}
-  - {fileID: 189538142}
-  - {fileID: 392814060}
-  - {fileID: 1430331608}
-  - {fileID: 945707783}
-  - {fileID: 460388660}
-  - {fileID: 1883657611}
-  - {fileID: 1753263688}
-  - {fileID: 1471054967}
-  - {fileID: 2007207902}
-  - {fileID: 1356398825}
-  - {fileID: 1339955689}
-  - {fileID: 1353584743}
-  - {fileID: 1931118826}
-  - {fileID: 1730085093}
-  - {fileID: 2118923389}
-  - {fileID: 1079798145}
-  - {fileID: 1132129647}
-  - {fileID: 105111858}
-  - {fileID: 879844342}
-  - {fileID: 2070878534}
-  - {fileID: 763095570}
-  itemInInventory: 000000
-  woodSprite: {fileID: 21300000, guid: 76beef9fdae7b48468ddf07d0400a374, type: 3}
-  clockSprite: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
-  swordSprite: {fileID: 0}
-  hotbarSlots:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  invExlusive:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  isHotbar: 0
-  currentItemPosition: {x: 0, y: 0}
-  startingPosition: []
-  hotbarHolders: {fileID: 0}
-  inventoryKey: 9
-  itemQuantity: 0
 --- !u!1 &632420191
 GameObject:
   m_ObjectHideFlags: 0
@@ -2434,7 +2255,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &763095568
 GameObject:
@@ -3171,6 +2992,7 @@ Transform:
   m_Children:
   - {fileID: 1628986299}
   - {fileID: 1297747773}
+  - {fileID: 164041883}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3785,7 +3607,7 @@ RectTransform:
   - {fileID: 1963257938}
   - {fileID: 1220409451}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5248,7 +5070,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1331157742
 GameObject:
@@ -113067,7 +112889,7 @@ GameObject:
   - component: {fileID: 2085801595}
   - component: {fileID: 2085801594}
   - component: {fileID: 2085801593}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Square (1)
   m_TagString: Clock
   m_Icon: {fileID: 0}
@@ -113165,7 +112987,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2090734503
 GameObject:
@@ -113178,7 +113000,7 @@ GameObject:
   - component: {fileID: 2090734506}
   - component: {fileID: 2090734505}
   - component: {fileID: 2090734504}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Square (2)
   m_TagString: Sword
   m_Icon: {fileID: 0}
@@ -113276,7 +113098,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2107317266
 GameObject:
