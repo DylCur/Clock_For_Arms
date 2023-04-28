@@ -69,6 +69,7 @@ public class pickupItem : MonoBehaviour
         inventory[otherTag] += itemMultiplier;
         Debug.Log($"Item = {otherTag} : Quantity {inventory[otherTag]}");
         itemPickedUp.SetActive(false);
+        invGUI.UpdateGUI(true, otherTag);
         
     }
 
