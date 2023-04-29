@@ -9,6 +9,9 @@ TagManager:
   - InvExclusive
   - Clock
   - Sword
+  - item
+  - background
+  - quantityText
   layers:
   - Default
   - TransparentFX
