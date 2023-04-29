@@ -142,6 +142,11 @@ public class inventoryGUI : MonoBehaviour
         }
 
         
+
+        for(int k = 0; k < inventoryItems.Length; k++){
+            Debug.Log($"Inventory: {inventoryItems[k]} {k}");
+            
+        }
         
     }
 

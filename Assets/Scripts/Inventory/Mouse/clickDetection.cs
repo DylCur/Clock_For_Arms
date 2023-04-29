@@ -25,6 +25,7 @@ public class clickDetection : MonoBehaviour, IPointerDownHandler
         Debug.Log("Clicked");
 
         
+        // Checks to see what items are clicked on - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
         if(iGUI.clickedItems[0] == null && iGUI.clickedItems[1] == null){
             iGUI.clickedItems[0] = gameObject;
@@ -43,13 +44,18 @@ public class clickDetection : MonoBehaviour, IPointerDownHandler
             iGUI.clickedItems[0] = gameObject;
         }
 
-        for(int i = 0; i < iGUI.background.Length; i++){
+        // End - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+        // Updates the inventory array - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+        for(int i = 0; i < iGUI.background.Length; i++){ // Sets the OG item to nothing (NEEDS TO BE SET TO WHATEVER IS IN THAT SLOT)
             if(iGUI.clickedItems[0] == iGUI.background[i]){
                 itemName = iGUI.inventoryItems[i];
                 iGUI.inventoryItems[i] = "Nothing";
             }
             
-            else if(iGUI.clickedItems[1] == iGUI.background[i]){
+            else if(iGUI.clickedItems[1] == iGUI.background[i]){ // Sets the new item slot to the OG item
                 iGUI.inventoryItems[i] = itemName;
                 iGUI.UpdateGUI(true, itemName);
             }
