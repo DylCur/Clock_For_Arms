@@ -2158,8 +2158,12 @@ MonoBehaviour:
   invExlusiveMask:
     serializedVersion: 2
     m_Bits: 0
-  clickedItems: []
-  clickedItemsString: []
+  clickedItems:
+  - {fileID: 1630737927}
+  - {fileID: 1863224494}
+  clickedItemsString:
+  - Nothing
+  - Nothing
 --- !u!1 &632420191
 GameObject:
   m_ObjectHideFlags: 0

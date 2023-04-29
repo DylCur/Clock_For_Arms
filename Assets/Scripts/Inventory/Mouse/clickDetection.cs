@@ -24,12 +24,23 @@ public class clickDetection : MonoBehaviour, IPointerDownHandler
     {
         Debug.Log("Clicked");
 
-        if(iGUI.clickedItemsString[0] == "Nothing" && iGUI.clickedItemsString[1] == "Nothing"){
+        
+
+        if(iGUI.clickedItems[0] == null && iGUI.clickedItems[1] == null){
             iGUI.clickedItems[0] = gameObject;
         }
 
-        else if(iGUI.clickedItemsString[0] != "Nothing" && iGUI.clickedItemsString[1] == "Nothing"){
+        else if(iGUI.clickedItems[0] != null && iGUI.clickedItems[1] == null){
             iGUI.clickedItems[1] = gameObject;
+        }
+
+        else{
+            for(int i = 0; i < iGUI.clickedItems.Length; i++){
+                iGUI.clickedItems[i] = null;
+                
+            }
+
+            iGUI.clickedItems[0] = gameObject;
         }
 
         for(int i = 0; i < iGUI.background.Length; i++){
