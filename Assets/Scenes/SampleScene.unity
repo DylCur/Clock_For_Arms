@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 62955980}
   - component: {fileID: 62955979}
   - component: {fileID: 62955981}
+  - component: {fileID: 62955982}
   m_Layer: 5
   m_Name: InventorySlot_20
   m_TagString: item
@@ -214,6 +215,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &62955982
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62955977}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &105111856
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,6 +710,7 @@ GameObject:
   - component: {fileID: 259951364}
   - component: {fileID: 259951363}
   - component: {fileID: 259951365}
+  - component: {fileID: 259951366}
   m_Layer: 5
   m_Name: InventorySlot_24
   m_TagString: item
@@ -762,6 +790,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &259951366
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259951361}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &309913317
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +828,7 @@ GameObject:
   - component: {fileID: 309913320}
   - component: {fileID: 309913319}
   - component: {fileID: 309913321}
+  - component: {fileID: 309913322}
   m_Layer: 5
   m_Name: InventorySlot_23
   m_TagString: item
@@ -853,6 +908,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &309913322
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309913317}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &374121479
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,6 +946,7 @@ GameObject:
   - component: {fileID: 374121482}
   - component: {fileID: 374121481}
   - component: {fileID: 374121483}
+  - component: {fileID: 374121484}
   m_Layer: 5
   m_Name: InventorySlot_10
   m_TagString: item
@@ -944,6 +1026,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &374121484
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374121479}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &392814058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,6 +1199,7 @@ GameObject:
   - component: {fileID: 397680552}
   - component: {fileID: 397680551}
   - component: {fileID: 397680553}
+  - component: {fileID: 397680554}
   m_Layer: 5
   m_Name: InventorySlot_11
   m_TagString: item
@@ -1170,6 +1279,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &397680554
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397680549}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &404056687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,6 +1680,7 @@ GameObject:
   - component: {fileID: 483160798}
   - component: {fileID: 483160797}
   - component: {fileID: 483160799}
+  - component: {fileID: 483160800}
   m_Layer: 5
   m_Name: InventorySlot_7
   m_TagString: item
@@ -1624,6 +1760,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &483160800
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483160795}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &496710709
 GameObject:
   m_ObjectHideFlags: 0
@@ -2252,6 +2414,7 @@ GameObject:
   - component: {fileID: 691999290}
   - component: {fileID: 691999289}
   - component: {fileID: 691999291}
+  - component: {fileID: 691999292}
   m_Layer: 5
   m_Name: InventorySlot_12
   m_TagString: item
@@ -2331,6 +2494,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &691999292
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691999287}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &733092159
 GameObject:
   m_ObjectHideFlags: 0
@@ -2343,6 +2532,7 @@ GameObject:
   - component: {fileID: 733092162}
   - component: {fileID: 733092161}
   - component: {fileID: 733092163}
+  - component: {fileID: 733092164}
   m_Layer: 5
   m_Name: InventorySlot_8
   m_TagString: item
@@ -2422,6 +2612,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &733092164
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733092159}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &742458292
 GameObject:
   m_ObjectHideFlags: 0
@@ -3242,6 +3458,7 @@ GameObject:
   - component: {fileID: 964587992}
   - component: {fileID: 964587991}
   - component: {fileID: 964587993}
+  - component: {fileID: 964587994}
   m_Layer: 5
   m_Name: InventorySlot_3
   m_TagString: item
@@ -3321,6 +3538,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &964587994
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964587989}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &967084012
 GameObject:
   m_ObjectHideFlags: 0
@@ -3333,6 +3576,7 @@ GameObject:
   - component: {fileID: 967084015}
   - component: {fileID: 967084014}
   - component: {fileID: 967084016}
+  - component: {fileID: 967084017}
   m_Layer: 5
   m_Name: InventorySlot_27
   m_TagString: item
@@ -3412,6 +3656,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &967084017
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967084012}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &994039909
 GameObject:
   m_ObjectHideFlags: 0
@@ -4582,6 +4852,7 @@ GameObject:
   - component: {fileID: 1188796802}
   - component: {fileID: 1188796801}
   - component: {fileID: 1188796803}
+  - component: {fileID: 1188796804}
   m_Layer: 5
   m_Name: InventorySlot_4
   m_TagString: item
@@ -4661,6 +4932,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &1188796804
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188796799}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1220409450
 GameObject:
   m_ObjectHideFlags: 0
@@ -4736,6 +5033,7 @@ GameObject:
   - component: {fileID: 1246786173}
   - component: {fileID: 1246786172}
   - component: {fileID: 1246786174}
+  - component: {fileID: 1246786175}
   m_Layer: 5
   m_Name: InventorySlot_2I
   m_TagString: item
@@ -4815,6 +5113,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &1246786175
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246786170}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1249453421
 GameObject:
   m_ObjectHideFlags: 0
@@ -5986,6 +6310,7 @@ GameObject:
   - component: {fileID: 1448747165}
   - component: {fileID: 1448747164}
   - component: {fileID: 1448747166}
+  - component: {fileID: 1448747167}
   m_Layer: 5
   m_Name: InventorySlot_19
   m_TagString: item
@@ -6065,6 +6390,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &1448747167
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448747162}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1468456173
 GameObject:
   m_ObjectHideFlags: 0
@@ -6077,6 +6428,7 @@ GameObject:
   - component: {fileID: 1468456176}
   - component: {fileID: 1468456175}
   - component: {fileID: 1468456177}
+  - component: {fileID: 1468456178}
   m_Layer: 5
   m_Name: InventorySlot_26
   m_TagString: item
@@ -6156,6 +6508,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &1468456178
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468456173}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1471054965
 GameObject:
   m_ObjectHideFlags: 0
@@ -6379,6 +6757,7 @@ GameObject:
   - component: {fileID: 1562786159}
   - component: {fileID: 1562786158}
   - component: {fileID: 1562786160}
+  - component: {fileID: 1562786161}
   m_Layer: 5
   m_Name: InventorySlot_13
   m_TagString: item
@@ -6458,6 +6837,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &1562786161
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562786156}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1628986298
 GameObject:
   m_ObjectHideFlags: 0
@@ -110554,6 +110959,7 @@ GameObject:
   - component: {fileID: 1679811598}
   - component: {fileID: 1679811597}
   - component: {fileID: 1679811599}
+  - component: {fileID: 1679811600}
   m_Layer: 5
   m_Name: InventorySlot_18
   m_TagString: item
@@ -110633,6 +111039,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &1679811600
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679811595}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1702281744
 GameObject:
   m_ObjectHideFlags: 0
@@ -111417,6 +111849,7 @@ GameObject:
   - component: {fileID: 1862135943}
   - component: {fileID: 1862135942}
   - component: {fileID: 1862135944}
+  - component: {fileID: 1862135945}
   m_Layer: 5
   m_Name: InventorySlot_14
   m_TagString: item
@@ -111496,6 +111929,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &1862135945
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862135940}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1863224494
 GameObject:
   m_ObjectHideFlags: 0
@@ -111508,6 +111967,7 @@ GameObject:
   - component: {fileID: 1863224497}
   - component: {fileID: 1863224496}
   - component: {fileID: 1863224498}
+  - component: {fileID: 1863224499}
   m_Layer: 5
   m_Name: InventorySlot_1I
   m_TagString: item
@@ -111587,6 +112047,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &1863224499
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863224494}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1876136409
 GameObject:
   m_ObjectHideFlags: 0
@@ -111599,6 +112085,7 @@ GameObject:
   - component: {fileID: 1876136412}
   - component: {fileID: 1876136411}
   - component: {fileID: 1876136413}
+  - component: {fileID: 1876136414}
   m_Layer: 5
   m_Name: InventorySlot_6
   m_TagString: item
@@ -111678,6 +112165,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &1876136414
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876136409}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1883657609
 GameObject:
   m_ObjectHideFlags: 0
@@ -111825,6 +112338,7 @@ GameObject:
   - component: {fileID: 1921047989}
   - component: {fileID: 1921047988}
   - component: {fileID: 1921047990}
+  - component: {fileID: 1921047991}
   m_Layer: 5
   m_Name: InventorySlot_16
   m_TagString: item
@@ -111904,6 +112418,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &1921047991
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921047986}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1931118824
 GameObject:
   m_ObjectHideFlags: 0
@@ -112051,6 +112591,7 @@ GameObject:
   - component: {fileID: 1945645558}
   - component: {fileID: 1945645557}
   - component: {fileID: 1945645559}
+  - component: {fileID: 1945645560}
   m_Layer: 5
   m_Name: InventorySlot_22
   m_TagString: item
@@ -112130,6 +112671,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &1945645560
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945645555}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1950938139
 GameObject:
   m_ObjectHideFlags: 0
@@ -112142,6 +112709,7 @@ GameObject:
   - component: {fileID: 1950938142}
   - component: {fileID: 1950938141}
   - component: {fileID: 1950938143}
+  - component: {fileID: 1950938144}
   m_Layer: 5
   m_Name: InventorySlot_17
   m_TagString: item
@@ -112221,6 +112789,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &1950938144
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950938139}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1963257937
 GameObject:
   m_ObjectHideFlags: 0
@@ -112296,6 +112890,7 @@ GameObject:
   - component: {fileID: 1977187723}
   - component: {fileID: 1977187722}
   - component: {fileID: 1977187724}
+  - component: {fileID: 1977187725}
   m_Layer: 5
   m_Name: InventorySlot_15
   m_TagString: item
@@ -112375,6 +112970,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &1977187725
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977187720}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1979833151
 GameObject:
   m_ObjectHideFlags: 0
@@ -112937,6 +113558,7 @@ GameObject:
   - component: {fileID: 2023557979}
   - component: {fileID: 2023557978}
   - component: {fileID: 2023557980}
+  - component: {fileID: 2023557981}
   m_Layer: 5
   m_Name: InventorySlot_21
   m_TagString: item
@@ -113016,6 +113638,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &2023557981
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023557976}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &2037613670
 GameObject:
   m_ObjectHideFlags: 0
@@ -113104,6 +113752,7 @@ GameObject:
   - component: {fileID: 2050898465}
   - component: {fileID: 2050898464}
   - component: {fileID: 2050898466}
+  - component: {fileID: 2050898467}
   m_Layer: 5
   m_Name: InventorySlot_25
   m_TagString: item
@@ -113183,6 +113832,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &2050898467
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050898462}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &2060260091
 GameObject:
   m_ObjectHideFlags: 0
@@ -113195,6 +113870,7 @@ GameObject:
   - component: {fileID: 2060260094}
   - component: {fileID: 2060260093}
   - component: {fileID: 2060260095}
+  - component: {fileID: 2060260096}
   m_Layer: 5
   m_Name: InventorySlot_9
   m_TagString: item
@@ -113274,6 +113950,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &2060260096
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060260091}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &2070878532
 GameObject:
   m_ObjectHideFlags: 0
@@ -113643,6 +114345,7 @@ GameObject:
   - component: {fileID: 2107317269}
   - component: {fileID: 2107317268}
   - component: {fileID: 2107317270}
+  - component: {fileID: 2107317271}
   m_Layer: 5
   m_Name: InventorySlot_5
   m_TagString: item
@@ -113722,6 +114425,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invGUIHolder: {fileID: 536776742}
   itemName: 
+--- !u!61 &2107317271
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107317266}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &2118923387
 GameObject:
   m_ObjectHideFlags: 0

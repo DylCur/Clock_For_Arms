@@ -67,7 +67,11 @@ public class inventoryGUI : MonoBehaviour
     {
         
         
-            
+            if(Input.GetKeyDown(KeyCode.U)){
+                for(int i = 0; i < inventoryItems.Length; i++){
+                    Debug.Log($"Inventory: {inventoryItems[i]} {i}");
+                }
+            }
         
     }
 
@@ -112,8 +116,9 @@ public class inventoryGUI : MonoBehaviour
 
 
             // Adds value and updates UI - - KEY MILESTONE - - KEY MILESTONE - - KEY MILESTONE - - KEY MILESTONE - - KEY MILESTONE - 
-            
-            int Value = pickItem.inventory[itemName];
+            if(itemName != "Nothing"){
+                int Value = pickItem.inventory[itemName];
+            }
 
             for(int i = 0; i < inventoryItems.Length; i++)
             {
@@ -159,11 +164,22 @@ public class inventoryGUI : MonoBehaviour
         tempImage = item[i].GetComponent<Image>();
         
         if(inventoryItems[i] == "Wood"){
+            Color visable = new Color(255, 255, 255, 255);
             tempImage.sprite = woodSprite;
+            tempImage.color = visable;
         }
 
         else if(inventoryItems[i] == "Clock"){ // Find a way to set these to 
+            Color visable = new Color(255, 255, 255, 255);
             tempImage.sprite = clockSprite;
+            tempImage.color = visable;
+
+        }
+
+        else if(inventoryItems[i] == "Nothing"){
+            tempImage.sprite = null;
+            Color invis = new Color(255, 255, 255, 0);
+            tempImage.color = invis;
         }
          
 
@@ -180,6 +196,10 @@ public class inventoryGUI : MonoBehaviour
             
             if(inventoryItems[j] != "Nothing"){
                 quantityText[j].text = pickItem.inventory[inventoryItems[j]].ToString();
+            }
+
+            else{
+                quantityText[j].text = "";
             }
              
         }

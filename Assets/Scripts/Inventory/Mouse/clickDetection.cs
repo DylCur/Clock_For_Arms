@@ -48,22 +48,31 @@ public class clickDetection : MonoBehaviour, IPointerDownHandler
 
 
         // Updates the inventory array - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+        int tempI = 0;
 
         for(int i = 0; i < iGUI.background.Length; i++){ // Sets the OG item to nothing (NEEDS TO BE SET TO WHATEVER IS IN THAT SLOT)
-            if(iGUI.clickedItems[0] == iGUI.background[i]){
+            if(iGUI.clickedItems[0] == iGUI.item[i]){
                 itemName = iGUI.inventoryItems[i];
-                iGUI.inventoryItems[i] = "Nothing";
+                tempI = i;
+                // iGUI.inventoryItems[i] = "Nothing";
+                Debug.Log("Found 1st item");
+                iGUI.SpriteChanger(itemName, i);
+
             }
-            
-            else if(iGUI.clickedItems[1] == iGUI.background[i]){ // Sets the new item slot to the OG item
+        }
+
+        for(int i = 0; i < iGUI.background.Length; i++){
+            if(iGUI.clickedItems[1] == iGUI.item[i]){ // Sets the new item slot to the OG item
+                string tempItemName = iGUI.inventoryItems[i];
+                iGUI.inventoryItems[tempI] = tempItemName;
                 iGUI.inventoryItems[i] = itemName;
-                iGUI.UpdateGUI(true, itemName);
+                iGUI.SpriteChanger(tempItemName, tempI);
+                iGUI.SpriteChanger(itemName, i);
+
+                Debug.Log("Found second item");
             }
         }
     }
 
-    void OnMouseDown()
-    {
-        
-    }
+    
 }
