@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using System;
 using UnityEngine.UI;
+using System.Linq;
 
 public class inventoryGUI : MonoBehaviour
 {
@@ -12,12 +13,18 @@ public class inventoryGUI : MonoBehaviour
     public GameObject[] background;
     public TMP_Text[] quantityText;
     public GameObject[] item;
+    public GameObject[] hotbar;
+    public GameObject[] invExlusive;
     
     [Header("Sprites")]
 
     public Sprite invBgSprite;
     public Sprite woodSprite;
     public Sprite clockSprite;
+    public Sprite swordSprite;
+
+    public Sprite disabledBG;
+    public Sprite enabledBG;
 
     [Header("Layermasks")]
 
@@ -29,6 +36,31 @@ public class inventoryGUI : MonoBehaviour
     public GameObject[] clickedItems;
     public string[] clickedItemsString;
 
+    [Header("Keycodes")]
+
+    public KeyCode hotbarKey = KeyCode.Tab;
+
+    public KeyCode oneKey = KeyCode.Alpha1;
+    public KeyCode twoKey = KeyCode.Alpha2;
+    public KeyCode threeKey = KeyCode.Alpha3;
+    public KeyCode fourKey = KeyCode.Alpha4;
+    public KeyCode fiveKey = KeyCode.Alpha5;
+    public KeyCode sixKey = KeyCode.Alpha6;
+    public KeyCode sevenKey = KeyCode.Alpha7;
+    public KeyCode eightKey = KeyCode.Alpha8;
+    public KeyCode nineKey = KeyCode.Alpha9;
+
+    [Header("Item Selection Parameters")]
+
+    public string currentlySelectedItem;
+
+
+
+
+
+
+    bool isHotbar;
+
 
 
 
@@ -37,6 +69,10 @@ public class inventoryGUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        hotbar = FindObjectsOfType<GameObject>().Where(go => (hotbarMask.value & 1 << go.layer) != 0).ToArray();
+        invExlusive = FindObjectsOfType<GameObject>().Where(go => (invExlusiveMask.value & 1 << go.layer) != 0).ToArray();
+
 
         for(int i = 0; i < inventoryItems.Length; i++){
             inventoryItems[i] = "Nothing";
@@ -72,6 +108,50 @@ public class inventoryGUI : MonoBehaviour
                     Debug.Log($"Inventory: {inventoryItems[i]} {i}");
                 }
             }
+
+            if(Input.GetKeyDown(hotbarKey)){
+                HotbarChanger();
+            }
+
+
+
+            if(Input.GetKeyDown(oneKey)){
+                ItemSelection(oneKey);
+            }
+
+            else if(Input.GetKeyDown(twoKey)){
+                ItemSelection(twoKey);
+            }
+
+            else if(Input.GetKeyDown(threeKey)){
+                ItemSelection(threeKey);
+            }
+
+            else if(Input.GetKeyDown(fourKey)){
+                ItemSelection(fourKey);
+            }
+
+            else if(Input.GetKeyDown(fiveKey)){
+                ItemSelection(fiveKey);
+            }
+
+            else if(Input.GetKeyDown(sixKey)){
+                ItemSelection(sixKey);
+            }
+            
+            else if(Input.GetKeyDown(sevenKey)){
+                ItemSelection(sevenKey);
+            }
+
+            else if(Input.GetKeyDown(eightKey)){
+                ItemSelection(eightKey);
+            }
+
+            else if(Input.GetKeyDown(nineKey)){
+                ItemSelection(nineKey);
+            }
+
+            
         
     }
 
@@ -123,7 +203,7 @@ public class inventoryGUI : MonoBehaviour
             for(int i = 0; i < inventoryItems.Length; i++)
             {
                 if(inventoryItems[i] != "Nothing"){
-                    SpriteChanger(itemName, i);
+                    SpriteChanger(itemName, i, true);
                 }
 
                 
@@ -157,33 +237,45 @@ public class inventoryGUI : MonoBehaviour
 
 
 
-    public void SpriteChanger(string itemName, int i){
+    public void SpriteChanger(string itemName, int i, bool shouldChangeQuantity){
 
+        if(shouldChangeQuantity){
+            Image tempImage;
+            tempImage = item[i].GetComponent<Image>();
+            
+            if(inventoryItems[i] == "Wood"){
+                Color visable = new Color(255, 255, 255, 255);
+                tempImage.sprite = woodSprite;
+                tempImage.color = visable;
+            }
 
-        Image tempImage;
-        tempImage = item[i].GetComponent<Image>();
-        
-        if(inventoryItems[i] == "Wood"){
-            Color visable = new Color(255, 255, 255, 255);
-            tempImage.sprite = woodSprite;
-            tempImage.color = visable;
-        }
+            else if(inventoryItems[i] == "Clock"){ 
+                Color visable = new Color(255, 255, 255, 255);
+                tempImage.sprite = clockSprite;
+                tempImage.color = visable;
 
-        else if(inventoryItems[i] == "Clock"){ // Find a way to set these to 
-            Color visable = new Color(255, 255, 255, 255);
-            tempImage.sprite = clockSprite;
-            tempImage.color = visable;
+            }
 
-        }
+            else if(inventoryItems[i] == "Sword"){ 
+                Color visable = new Color(255, 255, 255, 255);
+                tempImage.sprite = swordSprite;
+                tempImage.color = visable; // For new item add here
 
-        else if(inventoryItems[i] == "Nothing"){
-            tempImage.sprite = null;
-            Color invis = new Color(255, 255, 255, 0);
-            tempImage.color = invis;
-        }
+            }
+
+            else if(inventoryItems[i] == "Nothing"){
+                tempImage.sprite = null;
+                Color invis = new Color(255, 255, 255, 0);
+                tempImage.color = invis;
+            }
          
 
-        QuantityChanger(itemName);
+            QuantityChanger(itemName);
+        }
+
+      
+        
+        
         
     }
 
@@ -191,20 +283,122 @@ public class inventoryGUI : MonoBehaviour
 
     public void QuantityChanger(string itemName){
 
-        
-        for(int j = 0; j < inventoryItems.Length; j++){
+        int j = 0;
+
+        foreach(string str in inventoryItems){ // Looks through the whole inventory
             
-            if(inventoryItems[j] != "Nothing"){
+            if(str != "Nothing"){
                 quantityText[j].text = pickItem.inventory[inventoryItems[j]].ToString();
             }
 
             else{
                 quantityText[j].text = "";
             }
-             
+            
+            j++;
         }
         
 
         
+    }
+
+    public void HotbarChanger(){ // Take a guess at what this does 😒
+
+        if(!isHotbar){
+            foreach(GameObject obj in hotbar){
+                obj.transform.position = new Vector3(obj.transform.position.x, obj.transform.position.y - 358, obj.transform.position.z);
+            }
+
+            foreach(GameObject obj in invExlusive){
+                obj.SetActive(false);
+            }
+
+            isHotbar = true;
+        }
+
+        else if(isHotbar){ // I even added this incase its too difficult 🤯
+            foreach(GameObject obj in hotbar){
+                obj.transform.position = new Vector3(obj.transform.position.x, obj.transform.position.y + 358, obj.transform.position.z);
+            }
+
+            foreach(GameObject obj in invExlusive){
+                obj.SetActive(true);
+            }
+
+            isHotbar = false;
+        }
+        
+
+    }
+
+
+
+
+    public void ItemSelection(KeyCode keyPressed){
+        
+        if(keyPressed == oneKey){
+            currentlySelectedItem = inventoryItems[0];
+            Image tempObj = background[0].GetComponent<Image>();
+            ItemSelectionRenderer(tempObj);           
+        }
+
+        else if(keyPressed == twoKey){
+            currentlySelectedItem = inventoryItems[1];
+            Image tempObj = background[1].GetComponent<Image>();
+            ItemSelectionRenderer(tempObj);           
+        }
+
+        else if(keyPressed == threeKey){
+            currentlySelectedItem = inventoryItems[2];
+            Image tempObj = background[2].GetComponent<Image>();
+            ItemSelectionRenderer(tempObj);           
+        }
+
+        else if(keyPressed == fourKey){
+            currentlySelectedItem = inventoryItems[3];
+            Image tempObj = background[3].GetComponent<Image>();
+            ItemSelectionRenderer(tempObj);           
+        }
+
+        else if(keyPressed == fiveKey){
+            currentlySelectedItem = inventoryItems[4];
+            Image tempObj = background[4].GetComponent<Image>();
+            ItemSelectionRenderer(tempObj);           
+        }
+
+        else if(keyPressed == sixKey){
+            currentlySelectedItem = inventoryItems[5];
+            Image tempObj = background[5].GetComponent<Image>();
+            ItemSelectionRenderer(tempObj);           
+        }
+
+        else if(keyPressed == sevenKey){
+            currentlySelectedItem = inventoryItems[6];
+            Image tempObj = background[6].GetComponent<Image>();
+            ItemSelectionRenderer(tempObj);           
+        }
+
+        else if(keyPressed == eightKey){
+            currentlySelectedItem = inventoryItems[7];
+            Image tempObj = background[7].GetComponent<Image>();
+            ItemSelectionRenderer(tempObj);           
+        }
+
+        else if(keyPressed == nineKey){
+            currentlySelectedItem = inventoryItems[8];
+            Image tempObj = background[8].GetComponent<Image>();
+            ItemSelectionRenderer(tempObj);           
+        }
+    }
+
+
+    public void ItemSelectionRenderer(Image tempObj){
+        foreach(GameObject obj in background){
+            Image tempObj2 = obj.GetComponent<Image>();
+            tempObj2.sprite = disabledBG;
+        }
+
+        tempObj.sprite = enabledBG;
+
     }
 }

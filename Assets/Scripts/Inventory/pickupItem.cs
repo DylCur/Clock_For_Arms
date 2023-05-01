@@ -9,12 +9,13 @@ public class pickupItem : MonoBehaviour
     // Item : Quantity
     public Dictionary<string, int> inventory = new Dictionary<string, int>(){
         {"Wood", 0},
-        {"Clock", 0}
+        {"Clock", 0},
+        {"Sword", 0} // For new item add here
 
     };
 
 
-    public string[] possibleItemTags = {"Wood", "Stone", "Clock"};
+    public string[] possibleItemTags = {"Wood", "Stone", "Clock", "Sword"}; // For new item add here
 
     [Header("Keycodes")]
 

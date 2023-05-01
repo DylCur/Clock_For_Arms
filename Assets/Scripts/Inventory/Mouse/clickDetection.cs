@@ -56,7 +56,7 @@ public class clickDetection : MonoBehaviour, IPointerDownHandler
                 tempI = i;
                 // iGUI.inventoryItems[i] = "Nothing";
                 Debug.Log("Found 1st item");
-                iGUI.SpriteChanger(itemName, i);
+                iGUI.SpriteChanger(itemName, i, true);
 
             }
         }
@@ -66,8 +66,46 @@ public class clickDetection : MonoBehaviour, IPointerDownHandler
                 string tempItemName = iGUI.inventoryItems[i];
                 iGUI.inventoryItems[tempI] = tempItemName;
                 iGUI.inventoryItems[i] = itemName;
-                iGUI.SpriteChanger(tempItemName, tempI);
-                iGUI.SpriteChanger(itemName, i);
+                iGUI.SpriteChanger(tempItemName, tempI, true);
+                iGUI.SpriteChanger(itemName, i, true);
+                
+                i++;
+
+                if(i == 1){
+                    iGUI.ItemSelection(iGUI.oneKey);
+                }
+
+                else if(i == 2){
+                    iGUI.ItemSelection(iGUI.twoKey);
+                }
+
+                else if(i == 3){
+                    iGUI.ItemSelection(iGUI.threeKey);
+                }
+
+                else if(i == 4){
+                    iGUI.ItemSelection(iGUI.fourKey);
+                }
+
+                else if(i == 5){
+                    iGUI.ItemSelection(iGUI.fiveKey);
+                }
+
+                else if(i == 6){
+                    iGUI.ItemSelection(iGUI.sixKey);
+                }
+
+                else if(i == 7){
+                    iGUI.ItemSelection(iGUI.sevenKey);
+                }
+
+                else if(i == 8){
+                    iGUI.ItemSelection(iGUI.eightKey);
+                }
+
+                else if(i == 9){
+                    iGUI.ItemSelection(iGUI.nineKey);
+                }
 
                 Debug.Log("Found second item");
             }
