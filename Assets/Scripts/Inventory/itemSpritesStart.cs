@@ -8,6 +8,7 @@ public class itemSpritesStart : MonoBehaviour
     public GameObject[] woodObjects;
     public GameObject[] clockObjects;
     public GameObject[] swordObjects;
+    public GameObject[] axeObjects;
 
     inventoryGUI iGUI;
 
@@ -18,6 +19,9 @@ public class itemSpritesStart : MonoBehaviour
         woodObjects = GameObject.FindGameObjectsWithTag("Wood");
         clockObjects = GameObject.FindGameObjectsWithTag("Clock");
         swordObjects = GameObject.FindGameObjectsWithTag("Sword");
+        axeObjects = GameObject.FindGameObjectsWithTag("Axe");
+
+
 
 
         foreach(GameObject obj in woodObjects){
@@ -33,6 +37,11 @@ public class itemSpritesStart : MonoBehaviour
         foreach(GameObject obj in swordObjects){
             SpriteRenderer spriteRenderer = obj.GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = iGUI.swordSprite;
+        }
+
+        foreach(GameObject obj in axeObjects){
+            SpriteRenderer spriteRenderer = obj.GetComponent<SpriteRenderer>();
+            spriteRenderer.sprite = iGUI.axeSprite;
         }
 
     }

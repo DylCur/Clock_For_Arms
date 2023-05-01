@@ -22,6 +22,8 @@ public class inventoryGUI : MonoBehaviour
     public Sprite woodSprite;
     public Sprite clockSprite;
     public Sprite swordSprite;
+    public Sprite axeSprite;
+
 
     public Sprite disabledBG;
     public Sprite enabledBG;
@@ -78,7 +80,7 @@ public class inventoryGUI : MonoBehaviour
             inventoryItems[i] = "Nothing";
         }
 
-        item = GameObject.FindGameObjectsWithTag("item");
+        // item = GameObject.FindGameObjectsWithTag("item");
         background = GameObject.FindGameObjectsWithTag("background");
         
 
@@ -263,6 +265,13 @@ public class inventoryGUI : MonoBehaviour
 
             }
 
+            else if(inventoryItems[i] == "Axe"){ 
+                Color visable = new Color(255, 255, 255, 255);
+                tempImage.sprite = axeSprite;
+                tempImage.color = visable; // For new item add here
+
+            }
+
             else if(inventoryItems[i] == "Nothing"){
                 tempImage.sprite = null;
                 Color invis = new Color(255, 255, 255, 0);
@@ -354,13 +363,13 @@ public class inventoryGUI : MonoBehaviour
             ItemSelectionRenderer(tempObj);           
         }
 
-        else if(keyPressed == fourKey){
+        else if(keyPressed == fiveKey){
             currentlySelectedItem = inventoryItems[3];
             Image tempObj = background[3].GetComponent<Image>();
             ItemSelectionRenderer(tempObj);           
         }
 
-        else if(keyPressed == fiveKey){
+        else if(keyPressed == fourKey){
             currentlySelectedItem = inventoryItems[4];
             Image tempObj = background[4].GetComponent<Image>();
             ItemSelectionRenderer(tempObj);           

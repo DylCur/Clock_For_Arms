@@ -2214,6 +2214,7 @@ MonoBehaviour:
   - Stone
   - Clock
   - Sword
+  - Axe
   getKey: 102
   itemMultiplier: 1
 --- !u!114 &536776752
@@ -2286,39 +2287,40 @@ MonoBehaviour:
   - {fileID: 2070878534}
   - {fileID: 994039911}
   item:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1863224494}
+  - {fileID: 1246786170}
+  - {fileID: 964587989}
+  - {fileID: 2107317266}
+  - {fileID: 1188796799}
+  - {fileID: 1876136409}
+  - {fileID: 483160795}
+  - {fileID: 733092159}
+  - {fileID: 2060260091}
+  - {fileID: 374121479}
+  - {fileID: 397680549}
+  - {fileID: 691999287}
+  - {fileID: 1862135940}
+  - {fileID: 1562786156}
+  - {fileID: 1977187720}
+  - {fileID: 1921047986}
+  - {fileID: 1950938139}
+  - {fileID: 1679811595}
+  - {fileID: 1448747162}
+  - {fileID: 62955977}
+  - {fileID: 2023557976}
+  - {fileID: 309913317}
+  - {fileID: 1945645555}
+  - {fileID: 259951361}
+  - {fileID: 2050898462}
+  - {fileID: 1468456173}
+  - {fileID: 967084012}
   hotbar: []
   invExlusive: []
   invBgSprite: {fileID: 0}
   woodSprite: {fileID: 21300000, guid: 7636fa774c7fc7a4d818be3cff089c1e, type: 3}
   clockSprite: {fileID: 21300000, guid: bf642550e269b074f9dd755deef7b94c, type: 3}
   swordSprite: {fileID: 21300000, guid: 2adb367a9f602ac49a6f8d825398d6df, type: 3}
+  axeSprite: {fileID: 21300000, guid: f09eae8c0ea04254b90c5386a034a225, type: 3}
   disabledBG: {fileID: 21300000, guid: 3851c7ca45b756d4f80b4f500b478f40, type: 3}
   enabledBG: {fileID: 21300000, guid: 5e1ab61f60915ed4782072ac2f420e16, type: 3}
   hotbarMask:
@@ -2359,6 +2361,7 @@ MonoBehaviour:
   woodObjects: []
   clockObjects: []
   swordObjects: []
+  axeObjects: []
 --- !u!1 &632420191
 GameObject:
   m_ObjectHideFlags: 0
@@ -6896,6 +6899,117 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1628964734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1628964737}
+  - component: {fileID: 1628964736}
+  - component: {fileID: 1628964735}
+  m_Layer: 0
+  m_Name: Square (3)
+  m_TagString: Axe
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1628964735
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628964734}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!212 &1628964736
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628964734}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 5b7f664b515582d458717c354f6be292, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1628964737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628964734}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.16, y: 10.02, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1628986298
 GameObject:
   m_ObjectHideFlags: 0

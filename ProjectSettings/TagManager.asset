@@ -12,6 +12,7 @@ TagManager:
   - item
   - background
   - quantityText
+  - Axe
   layers:
   - Default
   - TransparentFX
