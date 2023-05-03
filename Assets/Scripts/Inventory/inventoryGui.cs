@@ -11,9 +11,7 @@ public class inventoryGUI : MonoBehaviour
 {
 
 
-    public TMP_Text itemText;
-    public TMP_Text highligtedArrayText;
-
+    
     [Header("Arrays")]
     public string[] inventoryItems; // Used to see where the items are in the inventory
     public GameObject[] background;
@@ -351,7 +349,7 @@ public class inventoryGUI : MonoBehaviour
 
     public void ItemSelection(KeyCode keyPressed){
 
-        itemText.text = keyPressed.ToString();
+        
 
         
         if(keyPressed == oneKey){
