@@ -6,9 +6,15 @@ using System;
 using UnityEngine.UI;
 using System.Linq;
 
+
 public class inventoryGUI : MonoBehaviour
 {
-    [Header("Arrays 😭")]
+
+
+    public TMP_Text itemText;
+    public TMP_Text highligtedArrayText;
+
+    [Header("Arrays")]
     public string[] inventoryItems; // Used to see where the items are in the inventory
     public GameObject[] background;
     public TMP_Text[] quantityText;
@@ -81,7 +87,7 @@ public class inventoryGUI : MonoBehaviour
         }
 
         // item = GameObject.FindGameObjectsWithTag("item");
-        background = GameObject.FindGameObjectsWithTag("background");
+        // background = GameObject.FindGameObjectsWithTag("background");
         
 
       
@@ -311,7 +317,7 @@ public class inventoryGUI : MonoBehaviour
         
     }
 
-    public void HotbarChanger(){ // Take a guess at what this does 😒
+    public void HotbarChanger(){ // Take a guess at what this does
 
         if(!isHotbar){
             foreach(GameObject obj in hotbar){
@@ -325,7 +331,7 @@ public class inventoryGUI : MonoBehaviour
             isHotbar = true;
         }
 
-        else if(isHotbar){ // I even added this incase its too difficult 🤯
+        else if(isHotbar){ // I even added this incase its too difficult
             foreach(GameObject obj in hotbar){
                 obj.transform.position = new Vector3(obj.transform.position.x, obj.transform.position.y + 358, obj.transform.position.z);
             }
@@ -344,6 +350,9 @@ public class inventoryGUI : MonoBehaviour
 
 
     public void ItemSelection(KeyCode keyPressed){
+
+        itemText.text = keyPressed.ToString();
+
         
         if(keyPressed == oneKey){
             currentlySelectedItem = inventoryItems[0];
@@ -402,12 +411,17 @@ public class inventoryGUI : MonoBehaviour
 
 
     public void ItemSelectionRenderer(Image tempObj){
-        foreach(GameObject obj in background){
-            Image tempObj2 = obj.GetComponent<Image>();
+        
+        
+        for(int i = 0; i < background.Length; i++){
+            Image tempObj2 = background[i].GetComponent<Image>();
             tempObj2.sprite = disabledBG;
-        }
+            tempObj.sprite = enabledBG;
 
-        tempObj.sprite = enabledBG;
+            
+        }
+        
+        
 
     }
 }
