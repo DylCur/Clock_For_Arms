@@ -1,0 +1,52 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "map1.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "Ground.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "grass_tileset_16x16.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "map1.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 711,
+                "y": 82
+            }
+        }
+    },
+    "last.externalTilesetPath": "C:/Users/Dylan/Desktop/Tiled",
+    "last.imagePath": "D:/Unity/Clock_For_Arms/Assets/Sprites/Objects/Cainos",
+    "map.fixedSize": false,
+    "map.height": 200,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 300,
+    "openFiles": [
+        "map1.tmx"
+    ],
+    "project": "map1.tiled-project",
+    "recentFiles": [
+        "map1.tmx",
+        "Ground.tsx",
+        "grass_tileset_16x16.tsx"
+    ],
+    "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}

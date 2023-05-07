@@ -13,6 +13,7 @@ TagManager:
   - background
   - quantityText
   - Axe
+  - Enemy
   layers:
   - Default
   - TransparentFX

@@ -9,6 +9,7 @@ public class playerController : MonoBehaviour
     public float maxSpeed = 12f;
     public float acceleration = 1f;
     public float timeBetweenSpeed = 0.2f;
+    [HideInInspector] public float ogTimeBetweenSpeed;
     bool canDecrease = true;
     bool canIncrease = true;
 
@@ -40,6 +41,8 @@ public class playerController : MonoBehaviour
     
     void Start()
     {
+
+        ogTimeBetweenSpeed = timeBetweenSpeed;
 
         Debug.Log(transform.localScale);
 
@@ -102,6 +105,10 @@ public class playerController : MonoBehaviour
             speed = maxSpeed;
         }
 
+        if(speed == maxSpeed || speed == 0){
+            timeBetweenSpeed = ogTimeBetweenSpeed;
+        }
+
         if(horizontalInput != 0 || verticalInput != 0){
             if(speed != maxSpeed && canIncrease){
                 StartCoroutine(IncreaseSpeed());
@@ -129,6 +136,8 @@ public class playerController : MonoBehaviour
 
         yield return new WaitForSeconds(timeBetweenSpeed);
 
+        timeBetweenSpeed *= 0.7f;
+
         canIncrease = true;
     }
 
@@ -136,13 +145,15 @@ public class playerController : MonoBehaviour
 
         canDecrease = false;
         
-        speed -= acceleration * 1.7f;
+        speed -= acceleration * 2.5f;
 
         if(speed < 0){
             speed = 0;
         }
 
         yield return new WaitForSeconds(timeBetweenSpeed);
+
+        timeBetweenSpeed *= 0.7f;
 
         canDecrease = true;
     

@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+ 
+
+
 public class attackController : MonoBehaviour
 {
 
@@ -15,6 +19,16 @@ public class attackController : MonoBehaviour
 
     public KeyCode attackKey = KeyCode.C;
     public KeyCode lastKeyPressed;
+
+    [Header("Arrays")]
+
+    public GameObject[] attackPoints;
+
+    [Header("Attacking Parameters")]
+
+    public int attackDamage = 1;
+    public float timeBetweenAttack = 0.2f;
+    
     
     
  
@@ -59,26 +73,26 @@ public class attackController : MonoBehaviour
 
             
            if(lastKeyPressed == KeyCode.W){
-                Attack("UP");
+                AttackAnimation("UP");
             }
 
            else if(lastKeyPressed == KeyCode.A){
-                Attack("LEFT");
+                AttackAnimation("LEFT");
             }
 
             else if(lastKeyPressed == KeyCode.S){
-                Attack("DOWN");
+                AttackAnimation("DOWN");
             }
 
             else if(lastKeyPressed == KeyCode.D){
-                Attack("RIGHT");
+                AttackAnimation("RIGHT");
             }
 
             
             else{
                 
                 lastKeyPressed = KeyCode.D;
-                Attack("RIGHT");
+                AttackAnimation("RIGHT");
             }
             
         }
@@ -86,7 +100,7 @@ public class attackController : MonoBehaviour
         
     }
 
-    public void Attack(string direction)
+    public void AttackAnimation(string direction)
     {
         if(direction == "UP"){
             playerControl.anim.SetBool("Up", true);
@@ -131,7 +145,7 @@ public class attackController : MonoBehaviour
     public IEnumerator attackCooldown(){
         canAttack = false;
         playerControl.canMove = false;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(timeBetweenAttack);
         playerControl.anim.SetBool("Up", false);
         playerControl.anim.SetBool("Down", false);
         playerControl.anim.SetBool("Left", false);
@@ -139,4 +153,12 @@ public class attackController : MonoBehaviour
         playerControl.canMove = true;
         canAttack = true;
     }
+
+
+
+    public void Attack(){
+
+    }
+
+
 }
