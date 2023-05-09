@@ -14,6 +14,8 @@ TagManager:
   - quantityText
   - Axe
   - Enemy
+  - MiscFloor
+  - Sign
   layers:
   - Default
   - TransparentFX
