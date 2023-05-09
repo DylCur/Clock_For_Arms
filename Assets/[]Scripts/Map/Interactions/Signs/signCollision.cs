@@ -32,6 +32,9 @@ public class signCollision : MonoBehaviour
                 signText.text = sContent.contents;
                 Debug.Log("Sign");
             }
+            else{
+                Debug.Log("Null");
+            }
             
         }
     }
