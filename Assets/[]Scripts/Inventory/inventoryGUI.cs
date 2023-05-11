@@ -34,6 +34,7 @@ public class inventoryGUI : MonoBehaviour
     public Sprite clockSprite;
     public Sprite swordSprite;
     public Sprite axeSprite;
+    public Sprite bowSprite;
 
 
     public Sprite disabledBG;
@@ -287,6 +288,13 @@ public class inventoryGUI : MonoBehaviour
             else if(inventoryItems[i] == "Axe"){ 
                 Color visable = new Color(255, 255, 255, 255);
                 tempImage.sprite = axeSprite;
+                tempImage.color = visable; // For new item add here
+
+            }
+
+            else if(inventoryItems[i] == "Bow"){ 
+                Color visable = new Color(255, 255, 255, 255);
+                tempImage.sprite = bowSprite;
                 tempImage.color = visable; // For new item add here
 
             }

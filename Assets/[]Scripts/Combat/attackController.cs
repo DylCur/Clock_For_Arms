@@ -3,17 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum AttackType{
+    None,
     Sword,
     Bow,
     Axe,
     Pickaxe
+
 }
  
 
 
 public class attackController : MonoBehaviour
 {
+
+    #region variables
+    inventoryGUI iGUI;
     playerController playerControl;
+    
 
 
     [Header("Enums")]
@@ -45,6 +51,7 @@ public class attackController : MonoBehaviour
     public int swordAttackDamage = 1;
     public float swordTimeBetweenAttack = 0.2f;
 
+
     [Header("Bow Parameters")]
 
     public int bowAttackDamage = 1000;
@@ -60,11 +67,14 @@ public class attackController : MonoBehaviour
     public int pickaxeAttackDamage = 10;
     public float pickaxeTimeBetweenAttack = 0.5f;
 
+
+
     [Header("Current Attacking Parameters")]
     
+    public bool isRanged;
     public float timeBetweenAttack;
     public int attackDamage;
-
+    #endregion
 
 
 
@@ -82,7 +92,7 @@ public class attackController : MonoBehaviour
     void Start()
     {
 
-        
+        iGUI = GetComponent<inventoryGUI>();
         playerControl = GetComponent<playerController>();
         shouldAttack = canAttack && Input.GetKeyDown(attackKey);
     }
@@ -90,25 +100,43 @@ public class attackController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(attackType == AttackType.Sword){
+
+        // Checks to see if the attackType has changed - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+
+        TypeCheck();
+
+
+        if(attackType == AttackType.Sword){ 
+            isRanged = false;
             attackDamage = swordAttackDamage;
             timeBetweenAttack = swordTimeBetweenAttack;
         }
 
         else if(attackType == AttackType.Bow){
+            isRanged = true;
             attackDamage = bowAttackDamage;
             timeBetweenAttack = bowTimeBetweenAttack;
         }
 
         else if(attackType == AttackType.Axe){
+            isRanged = false;
             attackDamage = axeAttackDamage;
             timeBetweenAttack = axeTimeBetweenAttack;
         }
 
         else if(attackType == AttackType.Pickaxe){
+            isRanged = false;
             attackDamage = pickaxeAttackDamage;
             timeBetweenAttack = pickaxeTimeBetweenAttack;
         }
+
+        else if(attackType == AttackType.None){
+            isRanged = false;
+            attackDamage = 0;
+            timeBetweenAttack = 0;
+        }
+
+        
 
 
 
@@ -167,39 +195,42 @@ public class attackController : MonoBehaviour
 
     public void AttackAnimation(string direction)
     {
-        if(direction == "UP"){
-            playerControl.anim.SetBool("Up", true);
-            playerControl.anim.SetBool("Down", false);
-            playerControl.anim.SetBool("Left", false);
-            playerControl.anim.SetBool("Right", false);
-            StartCoroutine(attackCooldown());
+        if(!isRanged){
+            if(direction == "UP"){
+                playerControl.anim.SetBool("Up", true);
+                playerControl.anim.SetBool("Down", false);
+                playerControl.anim.SetBool("Left", false);
+                playerControl.anim.SetBool("Right", false);
+                StartCoroutine(attackCooldown());
+            }
+
+            else if(direction == "DOWN"){
+                playerControl.anim.SetBool("Up", false);
+                playerControl.anim.SetBool("Down", true);
+                playerControl.anim.SetBool("Left", false);
+                playerControl.anim.SetBool("Right", false);
+                StartCoroutine(attackCooldown());
+            }
+
+            else if(direction == "LEFT"){
+                playerControl.anim.SetBool("Up", false);
+                playerControl.anim.SetBool("Down", false);
+                playerControl.anim.SetBool("Left", true);
+                playerControl.anim.SetBool("Right", false);
+                StartCoroutine(attackCooldown());
+
+            }
+
+            else if(direction == "RIGHT"){
+                playerControl.anim.SetBool("Up", false);
+                playerControl.anim.SetBool("Down", false);
+                playerControl.anim.SetBool("Left", false);
+                playerControl.anim.SetBool("Right", true);
+                StartCoroutine(attackCooldown());
+
+            }
         }
-
-        else if(direction == "DOWN"){
-            playerControl.anim.SetBool("Up", false);
-            playerControl.anim.SetBool("Down", true);
-            playerControl.anim.SetBool("Left", false);
-            playerControl.anim.SetBool("Right", false);
-            StartCoroutine(attackCooldown());
-        }
-
-        else if(direction == "LEFT"){
-            playerControl.anim.SetBool("Up", false);
-            playerControl.anim.SetBool("Down", false);
-            playerControl.anim.SetBool("Left", true);
-            playerControl.anim.SetBool("Right", false);
-            StartCoroutine(attackCooldown());
-
-        }
-
-        else if(direction == "RIGHT"){
-            playerControl.anim.SetBool("Up", false);
-            playerControl.anim.SetBool("Down", false);
-            playerControl.anim.SetBool("Left", false);
-            playerControl.anim.SetBool("Right", true);
-            StartCoroutine(attackCooldown());
-
-        }
+        
 
 
 
@@ -221,9 +252,41 @@ public class attackController : MonoBehaviour
 
 
 
-    public void Attack(){
+   
 
+    public void TypeCheck(){
+    
+        if(iGUI.currentlySelectedItem == "Sword"){
+            attackType = AttackType.Sword;
+        }
+    
+        else if(iGUI.currentlySelectedItem == "Bow"){
+            attackType = AttackType.Bow;
+        }
+
+        else if(iGUI.currentlySelectedItem == "Axe"){
+            attackType = AttackType.Axe;
+        }
+        
+        else if(iGUI.currentlySelectedItem == "Pickaxe"){
+            attackType = AttackType.Pickaxe;
+        }
+
+        else{
+            attackType = AttackType.None;
+        }
+        
+        
     }
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

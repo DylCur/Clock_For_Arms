@@ -24,6 +24,8 @@ public class hitDetector : MonoBehaviour
     {
         //attackControl = attackControlHolder.GetComponent<attackController>();
 
+        
+
         objectThatHasHit = gameObject;
 
         foreach(possibleEnemyTags value in Enum.GetValues(typeof(possibleEnemyTags))){
