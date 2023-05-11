@@ -4,27 +4,35 @@ using UnityEngine;
 
 public class enemyProperties : MonoBehaviour
 {
+    attackController attackControl;
+    public GameObject attackControlHolder;
+
 
     public int health;
     public int contactDamage;
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    void Start(){
+        attackControl = attackControlHolder.GetComponent<attackController>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void OnTriggerEnter2D(Collider2D other){
+        if(other.gameObject.tag == "AttackBox"){
+            TakeDamage(attackControl.attackDamage);
+        }
     }
+
+
+
 
 
     public void TakeDamage(int attackDamage){
         
-        health -= attackDamage;
+        if(!attackControl.canAttack){
+            health -= attackDamage;
+            Debug.Log("Enemy took damage");
+            Debug.Log(health);
+        }
 
         if(health <= 0){
             Die();

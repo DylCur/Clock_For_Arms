@@ -43,7 +43,7 @@ public class hitDetector : MonoBehaviour
                 enemyProperties enemProp = other.GetComponent<enemyProperties>();
                 if(enemProp != null){
                     
-                    enemProp.TakeDamage(attackControl.swordAttackDamage);
+                    //enemProp.TakeDamage(attackControl.swordAttackDamage);
                     Debug.Log($"Not Null {other.gameObject}");
                 }
 
@@ -59,8 +59,8 @@ public class hitDetector : MonoBehaviour
         }
     }
 
-    IEnumerator WaitAttack(){
-        yield return new WaitForSeconds(attackControl.timeBetweenAttack + attackControl.timeBetweenAttack / 10f);
+    public IEnumerator WaitAttack(){
+        yield return new WaitForSeconds(attackControl.timeBetweenAttack * 1.1f);
         hasHit = false;
     }
 }
