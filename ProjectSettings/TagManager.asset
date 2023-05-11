@@ -16,6 +16,7 @@ TagManager:
   - Enemy
   - MiscFloor
   - Sign
+  - AttackBox
   layers:
   - Default
   - TransparentFX
