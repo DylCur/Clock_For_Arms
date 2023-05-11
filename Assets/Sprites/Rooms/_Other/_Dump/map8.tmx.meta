@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9af45652ae9e6e54aab81c9394c8b71d
+guid: 1a90eaf8080a418478598bd5e67085a1
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -8,10 +8,10 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
-  missingFiles:
-  - ../../Room2/Ground.tsx
+  missingFiles: []
   errors:
-  - 'Missing tileset asset: ../../Room2/Ground.tsx'
+  - Could not generate asset path for 'C:/Users/Dylan/Desktop/Tiled/Map1/Grass_Sheet.tsx'
+  - 'Missing tileset asset: C:/Users/Dylan/Desktop/Tiled/Map1/Grass_Sheet.tsx'
   warnings: []
   missingSortingLayers: []
   missingLayers: []

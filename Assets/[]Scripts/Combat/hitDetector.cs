@@ -13,7 +13,6 @@ public class hitDetector : MonoBehaviour
     attackController attackControl;
     public bool hasHit;
     public GameObject objectThatHasHit;
-    enemyProperties enemProp;
     
     //public GameObject attackControlHolder;
     
@@ -38,9 +37,11 @@ public class hitDetector : MonoBehaviour
             if(other.tag == value.ToString() && !hasHit){
 
                 
-                enemProp = other.gameObject.GetComponent<enemyProperties>();
+     
+                enemyProperties enemProp = other.GetComponent<enemyProperties>();
                 if(enemProp != null){
-                    enemProp.TakeDamage(attackControl.attackDamage);
+                    
+                    enemProp.TakeDamage(attackControl.swordAttackDamage);
                     Debug.Log($"Not Null {other.gameObject}");
                 }
 

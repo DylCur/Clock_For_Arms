@@ -2,7 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+public enum attackType{
+    Sword,
+    Bow,
+    Axe,
+    Pickaxe
+}
  
 
 
@@ -22,12 +27,15 @@ public class attackController : MonoBehaviour
 
     [Header("Arrays")]
 
-    public GameObject[] attackPoints;
+    public GameObject[] attackPoints;   
 
-    [Header("Attacking Parameters")]
 
-    public int attackDamage = 1;
+    [Header("Sword Parameters")]
+
+    public int swordAttackDamage = 1;
     public float timeBetweenAttack = 0.2f;
+
+
     
     
     

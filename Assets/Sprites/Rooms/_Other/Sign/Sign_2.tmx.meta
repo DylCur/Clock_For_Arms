@@ -9,9 +9,9 @@ ScriptedImporter:
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
   missingFiles:
-  - ../../Room1/Ground.tsx
+  - ../../Room2/Ground.tsx
   errors:
-  - 'Missing tileset asset: ../../Room1/Ground.tsx'
+  - 'Missing tileset asset: ../../Room2/Ground.tsx'
   warnings: []
   missingSortingLayers: []
   missingLayers: []

@@ -11,8 +11,12 @@ public class inventoryGUI : MonoBehaviour
 {
 
 
+
+
     
     [Header("Arrays")]
+    [Space(5)]
+
     public string[] inventoryItems; // Used to see where the items are in the inventory
     public GameObject[] background;
     public TMP_Text[] quantityText;
@@ -20,7 +24,10 @@ public class inventoryGUI : MonoBehaviour
     public GameObject[] hotbar;
     public GameObject[] invExlusive;
     
+
+    [Space(50)]
     [Header("Sprites")]
+    [Space(5)]
 
     public Sprite invBgSprite;
     public Sprite woodSprite;
@@ -32,17 +39,23 @@ public class inventoryGUI : MonoBehaviour
     public Sprite disabledBG;
     public Sprite enabledBG;
 
+    [Space(50)]
     [Header("Layermasks")]
+    [Space(5)]
 
     public LayerMask hotbarMask;
     public LayerMask invExlusiveMask;
 
+    [Space(50)]
     [Header("Click Parameters")]
+    [Space(5)]
 
     public GameObject[] clickedItems;
     public string[] clickedItemsString;
 
+    [Space(50)]
     [Header("Keycodes")]
+    [Space(5)]
 
     public KeyCode hotbarKey = KeyCode.Tab;
 
@@ -56,7 +69,9 @@ public class inventoryGUI : MonoBehaviour
     public KeyCode eightKey = KeyCode.Alpha8;
     public KeyCode nineKey = KeyCode.Alpha9;
 
+    [Space(50)]
     [Header("Item Selection Parameters")]
+    [Space(5)]
 
     public string currentlySelectedItem;
 
