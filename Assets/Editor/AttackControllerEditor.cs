@@ -154,12 +154,28 @@ public class AttackControllerEditor : Editor
 
         #region Attack
 
-            attack = EditorGUILayout.BeginFoldoutHeaderGroup(attack, "Attack");
+
+            if(attackControl.attackType != AttackType.None){
+                attack = EditorGUILayout.BeginFoldoutHeaderGroup(attack, "Attack");
+
+            }
+
+            if(attack && attackControl.attackType == AttackType.None){
+                attack = false;
+            }
 
             if(attack){
+
+
+                EditorGUILayout.PropertyField(attackKeyEdit);
+                EditorGUILayout.PropertyField(isRangedEdit);
                 EditorGUILayout.PropertyField(attackDamageEdit);
                 EditorGUILayout.PropertyField(timeBetweenAttackEdit);
             }
+                
+            
+
+            EditorGUILayout.Space(10);
             
 
         #endregion

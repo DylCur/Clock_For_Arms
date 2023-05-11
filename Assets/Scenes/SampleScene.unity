@@ -10864,6 +10864,10 @@ PrefabInstance:
       propertyPath: signText
       value: 
       objectReference: {fileID: 69672380}
+    - target: {fileID: 142475385619201595, guid: 051661b227d450b4fa36fffa3bd9a8fe, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 142475385619201597, guid: 051661b227d450b4fa36fffa3bd9a8fe, type: 3}
       propertyPath: attackType
       value: 0

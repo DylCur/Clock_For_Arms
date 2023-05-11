@@ -22,8 +22,7 @@ public class attackController : MonoBehaviour
     
 
 
-    [Header("Enums")]
-    [Space(30)] // Put all enums between the [Space(30)]'s
+    [Space(5)]
 
     public AttackType attackType;
 
@@ -71,6 +70,8 @@ public class attackController : MonoBehaviour
 
     [Header("Current Attacking Parameters")]
     
+    [Space(10)]
+
     public bool isRanged;
     public float timeBetweenAttack;
     public int attackDamage;
