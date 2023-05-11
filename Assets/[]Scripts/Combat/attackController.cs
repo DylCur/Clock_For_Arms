@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum attackType{
+public enum AttackType{
     Sword,
     Bow,
     Axe,
@@ -13,8 +13,18 @@ public enum attackType{
 
 public class attackController : MonoBehaviour
 {
-
     playerController playerControl;
+
+
+    [Header("Enums")]
+    [Space(30)] // Put all enums between the [Space(30)]'s
+
+    public AttackType attackType;
+
+    
+    [Space(30)] // Put all enums between the [Space(30)]'s
+ 
+
 
     [Header("Bools")]
     public bool canAttack;
@@ -33,7 +43,30 @@ public class attackController : MonoBehaviour
     [Header("Sword Parameters")]
 
     public int swordAttackDamage = 1;
-    public float timeBetweenAttack = 0.2f;
+    public float swordTimeBetweenAttack = 0.2f;
+
+    [Header("Bow Parameters")]
+
+    public int bowAttackDamage = 1000;
+    public float bowTimeBetweenAttack = 0.5f;
+
+    [Header("Axe Parameters")]
+
+    public int axeAttackDamage = 10;
+    public float axeTimeBetweenAttack = 0.5f;
+
+    [Header("Pickaxe Parameters")]
+
+    public int pickaxeAttackDamage = 10;
+    public float pickaxeTimeBetweenAttack = 0.5f;
+
+    [Header("Current Attacking Parameters")]
+    
+    public float timeBetweenAttack;
+    public int attackDamage;
+
+
+
 
 
     
@@ -48,6 +81,8 @@ public class attackController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        
         playerControl = GetComponent<playerController>();
         shouldAttack = canAttack && Input.GetKeyDown(attackKey);
     }
@@ -55,6 +90,28 @@ public class attackController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(attackType == AttackType.Sword){
+            attackDamage = swordAttackDamage;
+            timeBetweenAttack = swordTimeBetweenAttack;
+        }
+
+        else if(attackType == AttackType.Bow){
+            attackDamage = bowAttackDamage;
+            timeBetweenAttack = bowTimeBetweenAttack;
+        }
+
+        else if(attackType == AttackType.Axe){
+            attackDamage = axeAttackDamage;
+            timeBetweenAttack = axeTimeBetweenAttack;
+        }
+
+        else if(attackType == AttackType.Pickaxe){
+            attackDamage = pickaxeAttackDamage;
+            timeBetweenAttack = pickaxeTimeBetweenAttack;
+        }
+
+
+
         shouldAttack = canAttack && Input.GetKeyDown(attackKey);
 
         if(Input.GetKey(KeyCode.W)){
